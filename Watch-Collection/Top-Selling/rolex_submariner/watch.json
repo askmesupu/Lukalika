@@ -1,0 +1,12 @@
+{
+  "name": "Rolex Submariner",
+  "brand": "Rolex",
+  "price": 250000,
+  "discount": 5,
+  "stock": true,
+  "description": "Classic Rolex Submariner with automatic movement and durable design.",
+  "images": [
+    "https://i.ibb.co/XXXXXX/rolex1.jpg",
+    "https://i.ibb.co/XXXXXX/rolex2.jpg"
+  ]
+}
