@@ -1,0 +1,12 @@
+{
+  "watches": [
+    {
+      "folder": "fossil_grant",
+      "name": "Fossil Grant"
+    },
+    {
+      "folder": "fossil_townsman",
+      "name": "Fossil Townsman"
+    }
+  ]
+}
