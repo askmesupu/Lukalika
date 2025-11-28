@@ -1,10 +1,12 @@
+/* General Body */
 body {
   margin: 0;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', cursive; /* Pixel/Minecraft style */
   background: #000;
   color: #fff;
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -19,16 +21,18 @@ header {
 }
 
 .logo {
-  width: 60px;
+  width: 120px; /* Logo boro kora holo */
   height: auto;
 }
 
 .hourglass-text {
-  font-family: 'Creepster', cursive;
-  font-size: 28px;
+  font-family: 'Creepster', cursive; /* Blackboard style font */
+  font-size: 36px; /* Font boro kora holo */
   margin-left: 10px;
+  color: #fff;
 }
 
+/* Sidebar Menu Toggle */
 .menu-toggle {
   cursor: pointer;
   display: flex;
@@ -44,6 +48,7 @@ header {
   border-radius: 2px;
 }
 
+/* Sidebar */
 #sidebar {
   position: fixed;
   left: -220px;
@@ -63,6 +68,10 @@ header {
   list-style: none;
   padding: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Menu middle a hobe */
+  height: 70%; /* Sidebar vertical middle positioning */
 }
 
 .sidebar-menu ul li {
@@ -72,9 +81,10 @@ header {
 .sidebar-menu ul li a {
   text-decoration: none;
   color: #fff;
-  font-size: 14px;
+  font-size: 14px; /* Pixel style font size */
 }
 
+/* Main content */
 main {
   padding: 20px;
   margin-left: 0;
@@ -85,6 +95,7 @@ main {
   margin-left: 220px;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 10px;
@@ -93,11 +104,7 @@ footer {
 
 .developed-by {
   font-weight: bold;
+  font-family: 'Press Start 2P', cursive; /* Pixel/Minecraft font */
   color: #fff;
-}
-
-.social-icons a {
-  margin: 0 5px;
-  text-decoration: none;
-  color: #fff;
+  font-size: 12px;
 }
