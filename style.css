@@ -21,14 +21,14 @@ header {
 }
 
 .logo {
-  width: 120px; /* Logo boro kora holo */
+  width: 140px; /* Logo aro boro */
   height: auto;
 }
 
 .hourglass-text {
-  font-family: 'Creepster', cursive; /* Blackboard style font */
-  font-size: 36px; /* Font boro kora holo */
-  margin-left: 10px;
+  font-family: 'Creepster', cursive; /* Blackboard style */
+  font-size: 42px; /* Font boro korlam */
+  margin-left: 15px;
   color: #fff;
 }
 
@@ -70,8 +70,8 @@ header {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Menu middle a hobe */
-  height: 70%; /* Sidebar vertical middle positioning */
+  justify-content: center; /* Menu vertical middle */
+  height: 70%;
 }
 
 .sidebar-menu ul li {
@@ -81,7 +81,8 @@ header {
 .sidebar-menu ul li a {
   text-decoration: none;
   color: #fff;
-  font-size: 14px; /* Pixel style font size */
+  font-size: 14px;
+  font-family: 'Press Start 2P', cursive; /* Pixel style */
 }
 
 /* Main content */
@@ -98,7 +99,7 @@ main {
 /* Footer */
 footer {
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   margin-top: 20px;
 }
 
@@ -106,5 +107,10 @@ footer {
   font-weight: bold;
   font-family: 'Press Start 2P', cursive; /* Pixel/Minecraft font */
   color: #fff;
-  font-size: 12px;
+  font-size: 16px; /* Boro korlam */
+}
+
+/* Remove FB/Instagram icon */
+footer .social-icons {
+  display: none;
 }
