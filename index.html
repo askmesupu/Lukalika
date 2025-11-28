@@ -1,34 +1,52 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HourGlass</title>
+<title>HourGlass Watches</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <img src="https://i.ibb.co/MD4g4YFS/resize-1762250039179255336320251104154152.jpg" alt="HourGlass Logo" id="logo">
-  <h1 class="hourglass-title">HourGlass</h1>
-  <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
-</header><aside id="sidebar">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="watch.html?category=Top-Selling">Top Selling</a></li>
-    <li><a href="watch.html?category=Men">Men's Watch</a></li>
-    <li><a href="watch.html?category=Women">Women's Watch</a></li>
-    <li><a href="watch.html?category=Popular">Popular</a></li>
-    <li><a href="cart.html">Cart</a></li>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+  <ul class="menu-items">
+    <li data-page="home">Home</li>
+    <li data-page="Top-Selling">Top Selling</li>
+    <li data-page="Men">Men's Watches</li>
+    <li data-page="Women">Women's Watches</li>
+    <li data-page="Popular">Popular</li>
     <li><a href="https://www.facebook.com/share/1Bn8QGmDPj/" target="_blank">Developer Contact</a></li>
   </ul>
-</aside><main>
-  <div id="watch-container"></div>
-</main><footer>
-  <div class="footer-content">
-    <p>Developed by Supto</p>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/share/17ggXzH3uw/" target="_blank">FB</a>
-      <a href="https://www.instagram.com/hourglass.watches.bd?igsh=MWpkNDhpbHpraDVy" target="_blank">IG</a>
-    </div>
+</div>
+
+<!-- Sidebar toggle button -->
+<div id="sidebarToggle" class="sidebar-toggle">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<!-- Header -->
+<header>
+  <img src="https://i.ibb.co/MD4g4YFS/resize-1762250039179255336320251104154152.jpg" alt="HourGlass Logo" class="logo">
+  <h1 class="brand-name">HourGlass</h1>
+</header>
+
+<!-- Main content -->
+<main id="content">
+  <!-- Watch sections will load here dynamically -->
+</main>
+
+<!-- Footer -->
+<footer>
+  <p class="developer">Developed by Supto</p>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/share/17ggXzH3uw/" target="_blank">FB</a>
+    <a href="https://www.instagram.com/hourglass.watches.bd?igsh=MWpkNDhpbHpraDVy" target="_blank">IG</a>
   </div>
-</footer><script src="script.js"></script><script src="watch.js"></script></body>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
