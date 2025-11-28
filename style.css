@@ -1,7 +1,6 @@
-/* General Body */
 body {
   margin: 0;
-  font-family: 'Press Start 2P', cursive; /* Pixel/Minecraft style */
+  font-family: 'Press Start 2P', cursive;
   background: #000;
   color: #fff;
 }
@@ -12,7 +11,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  position: relative;
 }
 
 .logo-container {
@@ -21,18 +19,18 @@ header {
 }
 
 .logo {
-  width: 140px; /* Logo aro boro */
+  width: 120px;
   height: auto;
 }
 
 .hourglass-text {
-  font-family: 'Creepster', cursive; /* Blackboard style */
-  font-size: 42px; /* Font boro korlam */
+  font-family: 'Press Start 2P', cursive;
+  font-size: 30px;
   margin-left: 15px;
   color: #fff;
 }
 
-/* Sidebar Menu Toggle */
+/* Menu Toggle */
 .menu-toggle {
   cursor: pointer;
   display: flex;
@@ -46,6 +44,7 @@ header {
   background: #fff;
   height: 3px;
   border-radius: 2px;
+  transition: 0.3s;
 }
 
 /* Sidebar */
@@ -67,11 +66,11 @@ header {
 .sidebar-menu ul {
   list-style: none;
   padding: 0;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Menu vertical middle */
+  justify-content: center;
   height: 70%;
+  text-align: center;
 }
 
 .sidebar-menu ul li {
@@ -81,14 +80,25 @@ header {
 .sidebar-menu ul li a {
   text-decoration: none;
   color: #fff;
-  font-size: 14px;
-  font-family: 'Press Start 2P', cursive; /* Pixel style */
+  font-size: 12px;
+  font-family: 'Press Start 2P', cursive;
 }
 
-/* Main content */
+/* Animate toggle to cross */
+.menu-toggle.open div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.open div:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open div:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
 main {
   padding: 20px;
-  margin-left: 0;
   transition: margin-left 0.3s;
 }
 
@@ -100,17 +110,9 @@ main {
 footer {
   text-align: center;
   padding: 15px;
-  margin-top: 20px;
 }
 
 .developed-by {
   font-weight: bold;
-  font-family: 'Press Start 2P', cursive; /* Pixel/Minecraft font */
-  color: #fff;
-  font-size: 16px; /* Boro korlam */
-}
-
-/* Remove FB/Instagram icon */
-footer .social-icons {
-  display: none;
-}
+  font-size: 14px;
+  }
