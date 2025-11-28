@@ -1,118 +1,120 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: 'Press Start 2P', cursive;
-  background: #000;
-  color: #fff;
+    background: #000;
+    color: #fff;
+    font-family: 'Press Start 2P', monospace; /* Minecraft style */
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #111;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-menu li {
+    margin: 20px 0;
+}
+
+.sidebar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 /* Header */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    background: #000;
 }
 
-.logo-container {
-  display: flex;
-  align-items: center;
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .logo {
-  width: 120px;
-  height: auto;
+    width: 60px;
+    height: auto;
 }
 
 .hourglass-text {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 30px;
-  margin-left: 15px;
-  color: #fff;
+    font-family: 'Creepster', cursive; /* Blackboard / Chokh style */
+    font-size: 32px;
+    color: #fff;
 }
 
-/* Menu Toggle */
+/* Menu toggle */
 .menu-toggle {
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 20px;
-  width: 25px;
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1001;
 }
 
 .menu-toggle div {
-  background: #fff;
-  height: 3px;
-  border-radius: 2px;
-  transition: 0.3s;
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
 }
 
-/* Sidebar */
-#sidebar {
-  position: fixed;
-  left: -220px;
-  top: 0;
-  width: 220px;
-  height: 100%;
-  background: #111;
-  transition: 0.3s;
-  padding-top: 100px;
+/* Toggle cross animation */
+.change .bar1 {
+    transform: rotate(-45deg) translate(-7px, 6px);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    transform: rotate(45deg) translate(-7px, -6px);
 }
 
-#sidebar.active {
-  left: 0;
-}
-
-.sidebar-menu ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 70%;
-  text-align: center;
-}
-
-.sidebar-menu ul li {
-  margin: 20px 0;
-}
-
-.sidebar-menu ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 12px;
-  font-family: 'Press Start 2P', cursive;
-}
-
-/* Animate toggle to cross */
-.menu-toggle.open div:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.menu-toggle.open div:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-toggle.open div:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-
+/* Main sections */
 main {
-  padding: 20px;
-  transition: margin-left 0.3s;
+    padding: 20px;
 }
 
-#sidebar.active ~ main {
-  margin-left: 220px;
+.top-selling, .all-watches {
+    margin: 20px 0;
+}
+
+h2 {
+    margin-bottom: 15px;
 }
 
 /* Footer */
 footer {
-  text-align: center;
-  padding: 15px;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #444;
 }
 
-.developed-by {
-  font-weight: bold;
-  font-size: 14px;
+.developer {
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
   }
