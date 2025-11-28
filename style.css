@@ -1,120 +1,146 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* ==================== style.css ==================== */
 
+/* General Reset & Body /
 body {
-    background: #000;
-    color: #fff;
-    font-family: 'Press Start 2P', monospace; /* Minecraft style */
+margin: 0;
+padding: 0;
+background-color: #000;
+font-family: 'Press Start 2P', cursive; / Minecraft-like font */
+color: #fff;
+overflow-x: hidden;
 }
 
-/* Sidebar */
-.sidebar {
-    position: fixed;
-    left: -250px;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    background: #111;
-    transition: 0.3s;
-    padding-top: 60px;
-}
-
-.sidebar-menu {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.sidebar-menu li {
-    margin: 20px 0;
-}
-
-.sidebar-menu li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-/* Header */
+/* Header /
 header {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    position: relative;
-    background: #000;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 10px;
+position: relative;
+}
+header img.logo {
+width: 120px;
+height: auto;
+margin-right: 10px;
+}
+header h1.hourglass {
+font-family: 'Permanent Marker', cursive; / Blackboard chokh style */
+font-size: 32px;
+margin: 0;
 }
 
-.logo-section {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+/* Sidebar /
+#sidebar {
+position: fixed;
+top: 0;
+right: -250px;
+width: 250px;
+height: 100%;
+background-color: #111;
+transition: 0.3s;
+display: flex;
+flex-direction: column;
+justify-content: center; / Menu middle */
+align-items: center;
+z-index: 1000;
 }
 
-.logo {
-    width: 60px;
-    height: auto;
+#sidebar.active {
+right: 0;
 }
 
-.hourglass-text {
-    font-family: 'Creepster', cursive; /* Blackboard / Chokh style */
-    font-size: 32px;
-    color: #fff;
+#sidebar ul {
+list-style: none;
+padding: 0;
+text-align: center;
 }
 
-/* Menu toggle */
-.menu-toggle {
-    position: absolute;
-    left: 20px;
-    cursor: pointer;
-    z-index: 1001;
+#sidebar ul li {
+margin: 20px 0;
+font-size: 14px;
+cursor: pointer;
 }
 
-.menu-toggle div {
-    width: 30px;
-    height: 4px;
-    background-color: #fff;
-    margin: 6px 0;
-    transition: 0.4s;
+#sidebar ul li a {
+text-decoration: none;
+color: #fff;
+font-family: 'Press Start 2P', cursive;
 }
 
-/* Toggle cross animation */
-.change .bar1 {
-    transform: rotate(-45deg) translate(-7px, 6px);
+#menu-toggle {
+position: fixed;
+top: 20px;
+right: 20px;
+z-index: 1100;
+width: 30px;
+height: 25px;
+cursor: pointer;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
-.change .bar2 {
-    opacity: 0;
+#menu-toggle span {
+display: block;
+height: 4px;
+width: 100%;
+background: #fff;
+border-radius: 2px;
+transition: 0.3s;
 }
-.change .bar3 {
-    transform: rotate(45deg) translate(-7px, -6px);
+#menu-toggle.active span:nth-child(1) {
+transform: rotate(45deg) translate(5px, 5px);
 }
-
-/* Main sections */
-main {
-    padding: 20px;
+#menu-toggle.active span:nth-child(2) {
+opacity: 0;
 }
-
-.top-selling, .all-watches {
-    margin: 20px 0;
-}
-
-h2 {
-    margin-bottom: 15px;
+#menu-toggle.active span:nth-child(3) {
+transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    border-top: 1px solid #444;
+text-align: center;
+padding: 15px;
+font-weight: bold;
+color: #fff;
 }
 
-.developer {
-    font-weight: bold;
-    color: #fff;
-    font-size: 16px;
-  }
+/* Buttons */
+button {
+padding: 10px 15px;
+font-family: 'Press Start 2P', cursive;
+background: #222;
+color: #fff;
+border: 2px solid #fff;
+cursor: pointer;
+transition: 0.2s;
+}
+button:hover {
+background: #fff;
+color: #000;
+}
+
+/* Cart & Page Content Fix */
+.page-content {
+padding: 80px 20px 60px 20px;
+}
+
+/* ==================== script.js ==================== */
+
+// Sidebar toggle
+const menuToggle = document.getElementById('menu-toggle');
+const sidebar = document.getElementById('sidebar');
+
+menuToggle.addEventListener('click', () => {
+menuToggle.classList.toggle('active');
+sidebar.classList.toggle('active');
+});
+
+// Close sidebar on link click
+const sidebarLinks = sidebar.querySelectorAll('a');
+sidebarLinks.forEach(link => {
+link.addEventListener('click', () => {
+menuToggle.classList.remove('active');
+sidebar.classList.remove('active');
+});
+});
