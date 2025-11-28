@@ -1,0 +1,12 @@
+{
+  "name": "Guess Luxe",
+  "brand": "Guess",
+  "price": 12000,
+  "discount": 0,
+  "stock": true,
+  "description": "Guess Luxe women’s watch with rose gold finish and minimalist design.",
+  "images": [
+    "https://i.ibb.co/XXXXXX/guess-luxe1.jpg",
+    "https://i.ibb.co/XXXXXX/guess-luxe2.jpg"
+  ]
+}
