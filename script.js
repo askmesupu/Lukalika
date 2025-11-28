@@ -1,17 +1,19 @@
+// ==================== script.js ====================
+
+// Sidebar toggle
 const menuToggle = document.getElementById('menu-toggle');
 const sidebar = document.getElementById('sidebar');
 
 menuToggle.addEventListener('click', () => {
-    sidebar.classList.toggle('active');
-    menuToggle.classList.toggle('change');
+menuToggle.classList.toggle('active');
+sidebar.classList.toggle('active');
 });
 
-// Sidebar show/hide
-const sidebarStyle = document.createElement('style');
-document.head.appendChild(sidebarStyle);
-
-sidebarStyle.innerHTML = `
-    .sidebar.active {
-        left: 0;
-    }
-`;
+// Close sidebar on link click
+const sidebarLinks = sidebar.querySelectorAll('a');
+sidebarLinks.forEach(link => {
+link.addEventListener('click', () => {
+menuToggle.classList.remove('active');
+sidebar.classList.remove('active');
+});
+});
