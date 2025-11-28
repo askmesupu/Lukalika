@@ -3,16 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HourGlass Watches</title>
+<title>HourGlass</title>
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
   <div class="logo-container">
-    <img src="https://i.ibb.co/MD4g4YFS/resize-1762250039179255336320251104154152.jpg" alt="HourGlass Logo" class="logo">
+    <img src="https://i.ibb.co/MD4g4YFS/resize-1762250039179255336320251104154152.jpg" class="logo" alt="HourGlass Logo">
     <span class="hourglass-text">HourGlass</span>
   </div>
-  <div class="menu-toggle" id="menu-toggle">
+  <div class="menu-toggle" id="menuToggle">
     <div></div>
     <div></div>
     <div></div>
@@ -22,29 +23,24 @@
 <aside id="sidebar">
   <nav class="sidebar-menu">
     <ul>
-      <li><a href="#" data-category="home">Home</a></li>
-      <li><a href="#" data-category="Top-Selling">Top Selling</a></li>
-      <li><a href="#" data-category="Men">Men's Watches</a></li>
-      <li><a href="#" data-category="Women">Women's Watches</a></li>
-      <li><a href="#" data-category="Popular">Popular</a></li>
-      <li><a href="https://www.facebook.com/share/17ggXzH3uw/" target="_blank">HourGlass FB</a></li>
-      <li><a href="https://www.facebook.com/share/1Bn8QGmDPj/" target="_blank">Developer Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="watch.html?category=Men">Men's Watch</a></li>
+      <li><a href="watch.html?category=Women">Women's Watch</a></li>
+      <li><a href="watch.html?category=Top-Selling">Top Selling</a></li>
+      <li><a href="watch.html?category=Popular">Popular</a></li>
+      <li><a href="https://www.facebook.com/hourglasspage" target="_blank">Developer Contact</a></li>
     </ul>
   </nav>
 </aside>
 
-<main>
-  <section id="watch-container">
-    <!-- Watches will be loaded here by JS -->
+<main id="mainContent">
+  <section id="watches">
+    <h2>Loading watches...</h2>
   </section>
 </main>
 
 <footer>
   <span class="developed-by">Developed by Supto</span>
-  <div class="social-icons">
-    <a href="https://www.facebook.com/share/17ggXzH3uw/" target="_blank">FB</a>
-    <a href="https://www.instagram.com/hourglass.watches.bd?igsh=MWpkNDhpbHpraDVy" target="_blank">IG</a>
-  </div>
 </footer>
 
 <script src="script.js"></script>
