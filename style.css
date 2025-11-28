@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    background: #000;
+    color: #fff;
+    font-family: 'Press Start 2P', monospace;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+header .logo {
+    height: 60px;
+}
+
+header .site-title {
+    font-family: 'Chalkboard', cursive;
+    font-size: 36px;
+    margin-left: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #111;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar .menu li {
+    list-style: none;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.sidebar .menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+footer .developed {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Watch Cards */
+.watch-card {
+    border: 1px solid #555;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.watch-images img {
+    width: 100px;
+    margin: 2px;
+}
+
+.out-of-stock button {
+    background: #555;
+    cursor: not-allowed;
+      }
