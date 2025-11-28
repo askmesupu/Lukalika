@@ -1,0 +1,12 @@
+{
+  "name": "Fossil Townsman",
+  "brand": "Fossil",
+  "price": 18000,
+  "discount": 10,
+  "stock": true,
+  "description": "Fossil Townsman men’s classic watch with stainless steel case.",
+  "images": [
+    "https://i.ibb.co/XXXXXX/fossil-townsman1.jpg",
+    "https://i.ibb.co/XXXXXX/fossil-townsman2.jpg"
+  ]
+}
