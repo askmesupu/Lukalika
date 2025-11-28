@@ -1,0 +1,12 @@
+{
+  "name": "Fossil Grant",
+  "brand": "Fossil",
+  "price": 15000,
+  "discount": 0,
+  "stock": true,
+  "description": "Fossil Grant men’s watch with leather strap and elegant design.",
+  "images": [
+    "https://i.ibb.co/XXXXXX/fossil-grant1.jpg",
+    "https://i.ibb.co/XXXXXX/fossil-grant2.jpg"
+  ]
+}
