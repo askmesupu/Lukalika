@@ -3,36 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HourGlass</title>
+<title>HourGlass Watches</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="sidebar" id="sidebar">
-  <ul class="menu-items">
-    <li data-page="Top-Selling">Top Selling</li>
-    <li data-page="Men">Men's Watch</li>
-    <li data-page="Women">Women's Watch</li>
-    <li data-page="Popular">Popular Watch</li>
-    <li><a href="https://www.facebook.com/HourGlassWatchesOfficial" target="_blank">HourGlass Facebook</a></li>
-    <li><a href="https://www.facebook.com/share/1Bn8QGmDPj/" target="_blank">Developer Contact</a></li>
-  </ul>
-</div>
-
-<div class="sidebar-toggle" id="sidebarToggle">
-  <div></div><div></div><div></div>
-</div>
-
+<!-- Header -->
 <header>
-  <img src="https://i.ibb.co/MD4g4YFS/resize-1762250039179255336320251104154152.jpg" alt="HourGlass Logo" class="logo">
-  <span class="logo-text">HourGlass</span>
+  <div class="logo-container">
+    <img src="https://i.ibb.co/MD4g4YFS/resize-1762250039179255336320251104154152.jpg" alt="HourGlass Logo" class="logo">
+    <h1 class="hourglass-font">HourGlass</h1>
+  </div>
+  <div class="toggle" id="toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </header>
 
-<main id="content"></main>
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
+  <ul class="sidebar-menu">
+    <li data-collection="Top-Selling">Top Selling</li>
+    <li data-collection="Men">Men's Watches</li>
+    <li data-collection="Women">Women's Watches</li>
+    <li data-collection="Popular">Popular</li>
+    <li><a href="https://www.facebook.com/share/17ggXzH3uw/" target="_blank">HourGlass FB</a></li>
+    <li><a href="https://www.facebook.com/share/1Bn8QGmDPj/" target="_blank">Developer Contact</a></li>
+  </ul>
+</aside>
 
+<!-- Main Content -->
+<main id="watch-container">
+  <!-- Watches will load here dynamically -->
+</main>
+
+<!-- Footer -->
 <footer>
-  <p>Developed by <b>Supto</b></p>
-  <div class="social">
+  <p class="developer">Developed by Supto</p>
+  <div class="social-icons">
     <a href="https://www.facebook.com/share/17ggXzH3uw/" target="_blank">FB</a>
     <a href="https://www.instagram.com/hourglass.watches.bd?igsh=MWpkNDhpbHpraDVy" target="_blank">IG</a>
   </div>
