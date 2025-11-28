@@ -1,199 +1,200 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/* General /
 body {
-margin: 0;
-padding: 0;
-font-family: 'Press Start 2P', monospace; / Pixel type font */
-background: #000;
-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: #000;
+  color: #fff;
 }
 
 header {
-display: flex;
-align-items: center;
-padding: 10px 20px;
-position: relative;
-z-index: 10;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 10;
 }
 
 header .logo {
-height: 60px;
-width: auto;
+  height: 80px;
+  width: auto;
 }
 
 header .logo-text {
-font-family: 'Courier New', monospace; /* Blackboard style for HourGlass */
-font-size: 36px;
-margin-left: 15px;
-color: #fff;
-font-weight: bold;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 36px;
+  margin-left: 15px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1;
 }
 
 /* Sidebar */
 .sidebar {
-position: fixed;
-top: 0;
-left: -220px;
-width: 220px;
-height: 100%;
-background: #111;
-transition: 0.3s;
-display: flex;
-flex-direction: column;
-justify-content: center;
-z-index: 100;
+  position: fixed;
+  top: 0;
+  left: -220px;
+  width: 220px;
+  height: 100%;
+  background: #111;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 100;
 }
 
 .sidebar.show {
-left: 0;
+  left: 0;
 }
 
 .sidebar ul {
-list-style: none;
-padding: 0;
-margin: 0;
-text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 .sidebar ul li {
-padding: 15px 0;
-cursor: pointer;
-border-bottom: 1px solid #222;
+  padding: 15px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #222;
 }
 
 .sidebar ul li a {
-color: #fff;
-text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Sidebar toggle */
 .sidebar-toggle {
-position: fixed;
-top: 20px;
-left: 20px;
-width: 30px;
-height: 25px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-cursor: pointer;
-z-index: 110;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 110;
 }
 
 .sidebar-toggle div {
-height: 4px;
-background: #fff;
-border-radius: 2px;
-transition: 0.3s;
+  height: 4px;
+  background: #fff;
+  border-radius: 2px;
+  transition: 0.3s;
 }
 
 .sidebar-toggle.open div:nth-child(1) {
-transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 .sidebar-toggle.open div:nth-child(2) {
-opacity: 0;
+  opacity: 0;
 }
 
 .sidebar-toggle.open div:nth-child(3) {
-transform: rotate(-45deg) translate(7px, -6px);
+  transform: rotate(-45deg) translate(7px, -6px);
 }
 
 /* Main content */
 main {
-padding: 20px;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 20px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 /* Watch card */
 .watch-card {
-background: #111;
-padding: 10px;
-width: 220px;
-border-radius: 10px;
-text-align: center;
-transition: 0.3s;
+  background: #111;
+  padding: 10px;
+  width: 220px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
 }
 
 .watch-card img {
-width: 100%;
-border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .watch-card h3 {
-font-size: 16px;
-margin: 5px 0;
+  font-size: 16px;
+  margin: 5px 0;
+  font-family: 'Arial', sans-serif;
 }
 
 .watch-card p {
-font-size: 12px;
-color: #ccc;
-margin: 5px 0;
+  font-size: 12px;
+  color: #ccc;
+  margin: 5px 0;
 }
 
 .watch-card button {
-margin-top: 10px;
-padding: 10px 15px;
-background: #222;
-color: #fff;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-transition: 0.3s;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .watch-card button:hover {
-background: #444;
+  background: #444;
 }
 
 .price {
-margin-top: 5px;
+  margin-top: 5px;
 }
 
 .original {
-text-decoration: line-through;
-color: #999;
+  text-decoration: line-through;
+  color: #999;
 }
 
 .discounted {
-color: #0f0;
-font-weight: bold;
+  color: #0f0;
+  font-weight: bold;
 }
 
 /* Footer */
 footer {
-text-align: center;
-margin: 20px 0;
-color: #fff;
+  text-align: center;
+  margin: 20px 0;
+  color: #fff;
 }
 
 footer b {
-color: #f0f0f0;
+  color: #f0f0f0;
 }
 
 footer .social a {
-margin: 0 10px;
-color: #fff;
-text-decoration: none;
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Responsive adjustments */
 @media screen and (max-width: 600px) {
-main {
-flex-direction: column;
-align-items: center;
-}
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.sidebar-toggle {
-top: 15px;
-left: 15px;
-}
+  .sidebar-toggle {
+    top: 15px;
+    left: 15px;
+  }
 
-header .logo-text {
-font-size: 28px;
-}
+  header .logo-text {
+    font-size: 28px;
+  }
 }
