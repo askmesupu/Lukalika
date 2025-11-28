@@ -1,0 +1,16 @@
+[
+  {
+    "id": "rolex_submariner",
+    "brand": "Rolex",
+    "model": "Submariner",
+    "description": "Luxury Rolex Submariner, classic dive watch.",
+    "price": 10000,
+    "discount": 5,
+    "discountedPrice": 9500,
+    "stock": "available",
+    "images": [
+      "https://i.ibb.co/example1.jpg",
+      "https://i.ibb.co/example2.jpg"
+    ]
+  }
+]
