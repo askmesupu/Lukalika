@@ -1,11 +1,10 @@
-/* ==================== style.css ==================== */
+/* ==================== style.css - Fixed Black Theme ==================== */
 
-/* General Reset & Body /
 body {
 margin: 0;
 padding: 0;
 background-color: #000;
-font-family: 'Press Start 2P', cursive; / Minecraft-like pixel font */
+font-family: 'Press Start 2P', cursive; /* Minecraft pixel style */
 color: #fff;
 overflow-x: hidden;
 }
@@ -15,11 +14,11 @@ header {
 display: flex;
 align-items: center;
 justify-content: center;
-padding: 10px;
 position: relative;
+padding: 10px 20px;
 }
 header img.logo {
-width: 120px;
+width: 150px;
 height: auto;
 margin-right: 10px;
 }
@@ -40,30 +39,25 @@ background-color: #111;
 transition: 0.3s;
 display: flex;
 flex-direction: column;
-justify-content: center; / Menu vertically middle */
+justify-content: center; / menu vertical middle */
 align-items: center;
 z-index: 1000;
 }
-
 #sidebar.active {
 right: 0;
 }
-
 #sidebar ul {
 list-style: none;
 padding: 0;
 text-align: center;
 }
-
 #sidebar ul li {
 margin: 20px 0;
 font-size: 14px;
-cursor: pointer;
 }
-
 #sidebar ul li a {
-text-decoration: none;
 color: #fff;
+text-decoration: none;
 font-family: 'Press Start 2P', cursive;
 }
 
@@ -72,10 +66,10 @@ font-family: 'Press Start 2P', cursive;
 position: fixed;
 top: 20px;
 right: 20px;
-z-index: 1100;
 width: 30px;
 height: 25px;
 cursor: pointer;
+z-index: 1100;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
@@ -98,12 +92,9 @@ opacity: 0;
 transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Footer */
-footer {
-text-align: center;
-padding: 15px;
-font-weight: bold;
-color: #fff;
+/* Page Content */
+.page-content {
+padding: 80px 20px 60px 20px;
 }
 
 /* Buttons */
@@ -121,7 +112,10 @@ background: #fff;
 color: #000;
 }
 
-/* Page Content */
-.page-content {
-padding: 80px 20px 60px 20px;
+/* Footer */
+footer {
+text-align: center;
+padding: 15px;
+font-weight: bold;
+color: #fff;
 }
